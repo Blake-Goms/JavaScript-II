@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const myDog = 'Thor';
+function greet() { 
+  const breed = 'Rottweiler'
+  return function() {
+    console.log(`My dog's name is ${myDog} and he is a ${breed}`);
+  }
+}
+const invokeGreet = greet()
+invokeGreet()
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
